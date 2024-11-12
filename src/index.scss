@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Druk LCG", sans-serif;
+  cursor: none;
+
+  *:hover {
+    cursor: none;
+  }
+}
+
+body {
+  background-color: #ffffff;
+  opacity: 1;
+  background-image: radial-gradient(#0337AA 1.3px, #ffffff 1.3px);
+  background-size: 26px 26px;
+}

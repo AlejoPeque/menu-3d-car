@@ -1,0 +1,77 @@
+.button {
+  height: 60px;
+  width: 240px;
+  border-radius: 40px;
+  cursor: pointer;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: 2px solid white;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 0px 2px rgb(232, 232, 232);
+  z-index: 20;
+
+  &:hover {
+    box-shadow: 0 0 0px 2px rgb(198, 198, 198);
+    cursor: none;
+  }
+
+  .slider {
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    .el {
+      height: 100%;
+      width: 100%;
+      background-color: #0337AA;
+      color: #FFF;
+      text-transform: uppercase;
+      font-size: 1.8rem;
+      font-weight: 500;
+
+      &:nth-of-type(2) {
+        top: 100%;
+        background-color: #FFF;
+        color: #0337AA;
+      }
+
+      &:hover {
+        .perspectiveText {
+          transform: rotateX(90deg);
+          p {
+            &:nth-of-type(1) {
+              transform: translateY(-100%);
+              opacity: 0;
+            }
+            &:nth-of-type(2) {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .perspectiveText {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.75s cubic-bezier(0.76, 0, 0.24, 1);
+    transform-style: preserve-3d;
+
+    p {
+      transition: all 0.75s cubic-bezier(0.76, 0, 0.24, 1);
+      &:nth-of-type(2) {
+        position: absolute;
+        transform: rotateX(-90deg) translateY(16px);
+        transform-origin: bottom center;
+        opacity: 0;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,16 @@
+.header {
+  position: fixed;
+  left: 50px;
+  bottom: 50px;
+  z-index: 20;
+  .menu {
+    position: relative;
+    width: 480px;
+    height: 650px;
+    background-color: #0337AA;
+    border-radius: 25px;
+    border: 2px solid white;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 0px 2px rgb(232, 232, 232);
+  }
+}

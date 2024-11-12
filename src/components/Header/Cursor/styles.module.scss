@@ -1,0 +1,14 @@
+.cursor {
+  width: 32px;
+  height: 32px;
+  background: white;
+  border: 2px solid white;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  color: #0337AA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
